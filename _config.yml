@@ -13,3 +13,10 @@ collection:
     output: true
     permalink: ""
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
