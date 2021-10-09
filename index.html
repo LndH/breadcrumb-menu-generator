@@ -8,7 +8,6 @@ title: Index
 <ul>
     {% assign current_page = page %}
     {% assign sorted_pages = site.pages | sort: "title" %}
-    {{ sorted_pages }}
     {% for page in sorted_pages %}
     {% if page.title != null and page.title != current_page.title %}
     <li>
