@@ -9,6 +9,8 @@ title: Overview
     {% assign current_page = page %}
     {% assign sorted_pages = site.pages | sort: "title" %}
     {% for page in sorted_pages %}
+    hi
+    {{page.title}}
     {% if page.title != null and page.title != current_page.title %}
     <li>
         <a href="{{page.url}}">
