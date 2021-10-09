@@ -7,3 +7,16 @@ page_gen:
   template: 'menu'
   name: 'title'
   dir: ''
+
+collection:
+  pages:
+    output: true
+    permalink: ""
+
+defaults:
+  -
+    scope:
+      patch: ""
+      type: "pages"
+    values:
+      layout: "menu"
