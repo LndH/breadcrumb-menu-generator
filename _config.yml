@@ -1,4 +1,4 @@
-url: "https://lndh.github.io/breadcrumb-menu-generator/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
 
@@ -6,17 +6,4 @@ page_gen:
 - data: 'links'
   template: 'menu'
   name: 'title'
-  dir: ''
-
-collection:
-  pages:
-    output: true
-    permalink: ""
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "overview"
+  dir: 'menus'
