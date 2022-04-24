@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: work around permission issue
-        run: git config --global --add safe.directory /github/workspace
+        run: git config --global --add safe.directory /__w/breadcrumb-menu-generator/breadcrumb-menu-generator
 
       - uses: actions/checkout@v2
 
@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-gems-
 
       - name: work around permission issue
-        run: git config --global --add safe.directory /github/workspace
+        run: git config --global --add safe.directory /__w/breadcrumb-menu-generator/breadcrumb-menu-generator
 
       # checkout master
       - uses: actions/checkout@v2
